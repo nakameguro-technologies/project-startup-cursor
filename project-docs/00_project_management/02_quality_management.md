@@ -1,25 +1,24 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: 品質管理計画書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../01_requirements/01_project_overview.md（プロジェクト概要）
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- 01_project_plan.md（プロジェクト計画）
-
-### 参照されるドキュメント
-- 03_risk_management.md（リスク管理）
-
-### 関連ドキュメント
-- ../02_design/01_system_architecture.md（システムアーキテクチャ）
-- ../03_development/01_development_standards.md（開発標準）
-- ../03_development/02_test_specifications.md（テスト仕様）
-- ../04_operations/01_operations_manual.md（運用マニュアル）
+title: "品質管理計画書"
+version: "0.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "01_project_plan.md"
+  - "../01_requirements/01_project_overview.md"
+  - "../02_design/01_system_architecture.md"
+  - "../03_development/01_development_standards.md"
+  - "../03_development/02_test_specifications.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "01_project_plan.md"
+    - "../01_requirements/01_project_overview.md"
+  downstream:
+    - "../02_design/01_system_architecture.md"
+    - "../03_development/01_development_standards.md"
+    - "../03_development/02_test_specifications.md"
 ---
 
 # 品質管理計画書

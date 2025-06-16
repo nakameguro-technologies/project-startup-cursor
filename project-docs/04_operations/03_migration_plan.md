@@ -1,27 +1,21 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: 移行計画書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../02_design/01_system_architecture.md（システムアーキテクチャ）
-- ../02_design/03_database_design.md（データベース設計）
-- ../03_development/03_deployment_guide.md（デプロイメントガイド）
-- 01_operations_manual.md（運用マニュアル）
-- 02_monitoring_backup.md（監視・バックアップ）
-
-### 参照されるドキュメント
-- なし（最終的な移行実行ドキュメント）
-
-### 関連ドキュメント
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- ../01_requirements/05_constraints.md（制約条件）
-- ../05_project_management/01_project_plan.md（プロジェクト計画）
-- ../05_project_management/03_risk_management.md（リスク管理）
+title: "移行計画書"
+version: "0.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "../03_development/03_deployment_guide.md"
+  - "01_operations_manual.md"
+  - "../05_project_management/01_project_plan.md"
+  - "../05_project_management/03_risk_management.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "../03_development/03_deployment_guide.md"
+    - "01_operations_manual.md"
+    - "../05_project_management/01_project_plan.md"
+  downstream: []
 ---
 
 # 移行計画書

@@ -1,26 +1,28 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: プロジェクト概要
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- なし（プロジェクトの出発点となるドキュメント）
-
-### 参照されるドキュメント
-- 02_business_requirements.md（ビジネス要件）
-- 03_functional_requirements.md（機能要件）
-- 04_non_functional_requirements.md（非機能要件）
-- 05_constraints.md（制約条件）
-- ../02_design/01_system_architecture.md（システムアーキテクチャ）
-- ../05_project_management/01_project_plan.md（プロジェクト計画）
-
-### 関連ドキュメント
-- ../05_project_management/02_quality_management.md（品質管理）
-- ../05_project_management/03_risk_management.md（リスク管理）
+title: "プロジェクト概要"
+version: "0.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "02_business_requirements.md"
+  - "03_functional_requirements.md" 
+  - "04_non_functional_requirements.md"
+  - "05_constraints.md"
+  - "../02_design/01_system_architecture.md"
+  - "../05_project_management/01_project_plan.md"
+  - "../05_project_management/02_quality_management.md"
+  - "../05_project_management/03_risk_management.md"
+status: "draft"
+dependencies:
+  upstream: []
+  downstream:
+    - "02_business_requirements.md"
+    - "03_functional_requirements.md"
+    - "04_non_functional_requirements.md"
+    - "05_constraints.md"
+    - "../02_design/01_system_architecture.md"
+    - "../05_project_management/01_project_plan.md"
 ---
 
 # プロジェクト概要

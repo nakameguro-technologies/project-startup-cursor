@@ -1,27 +1,24 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: アプリケーション設計書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../01_requirements/03_functional_requirements.md（機能要件）
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- 01_system_architecture.md（システムアーキテクチャ）
-
-### 参照されるドキュメント
-- 03_database_design.md（データベース設計）
-- 04_interface_design.md（インターフェース設計）
-- ../03_development/01_development_standards.md（開発標準）
-- ../03_development/02_test_specifications.md（テスト仕様）
-
-### 関連ドキュメント
-- ../01_requirements/02_business_requirements.md（ビジネス要件）
-- ../01_requirements/05_constraints.md（制約条件）
-- ../03_development/03_deployment_guide.md（デプロイメントガイド）
+title: "アプリケーション設計書"
+version: "0.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "01_system_architecture.md"
+  - "../01_requirements/03_functional_requirements.md"
+  - "03_database_design.md"
+  - "04_interface_design.md"
+  - "../03_development/01_development_standards.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "01_system_architecture.md"
+    - "../01_requirements/03_functional_requirements.md"
+  downstream:
+    - "03_database_design.md"
+    - "04_interface_design.md"
+    - "../03_development/01_development_standards.md"
 ---
 
 # アプリケーション設計書

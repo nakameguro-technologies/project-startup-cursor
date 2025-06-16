@@ -1,25 +1,23 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: ビジネス要件定義書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- 01_project_overview.md（プロジェクト概要）
-
-### 参照されるドキュメント
-- 03_functional_requirements.md（機能要件）
-- 04_non_functional_requirements.md（非機能要件）
-- ../02_design/01_system_architecture.md（システムアーキテクチャ）
-- ../02_design/02_application_design.md（アプリケーション設計）
-
-### 関連ドキュメント
-- 05_constraints.md（制約条件）
-- ../05_project_management/01_project_plan.md（プロジェクト計画）
-- ../05_project_management/03_risk_management.md（リスク管理）
+title: "ビジネス要件定義書"
+version: "0.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "01_project_overview.md"
+  - "03_functional_requirements.md"
+  - "04_non_functional_requirements.md"
+  - "../02_design/01_system_architecture.md"
+  - "../05_project_management/01_project_plan.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "01_project_overview.md"
+  downstream:
+    - "03_functional_requirements.md"
+    - "04_non_functional_requirements.md"
+    - "../02_design/01_system_architecture.md"
 ---
 
 # 業務要件定義書
