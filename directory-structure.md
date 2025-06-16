@@ -7,6 +7,11 @@
 ## Overall Structure
 ```
 project-docs/
+├── [DIR] 00_project_management/ // プロジェクト管理
+│   ├── [MD] 01_project_plan.md              // プロジェクト計画
+│   ├── [MD] 02_quality_management.md        // 品質管理
+│   └── [MD] 03_risk_management.md           // リスク管理
+│
 ├── [DIR] 01_requirements/          // 要件定義
 │   ├── [MD] 01_project_overview.md           // プロジェクト概要
 │   ├── [MD] 02_business_requirements.md      // ビジネス要件
@@ -25,13 +30,8 @@ project-docs/
 │   ├── [MD] 02_test_specifications.md       // テスト仕様
 │   └── [MD] 03_deployment_guide.md          // デプロイメントガイド
 │
-├── [DIR] 04_operations/         // 運用
-│   ├── [MD] 01_operations_manual.md         // 運用マニュアル
-│   ├── [MD] 02_monitoring_backup.md         // 監視・バックアップ
-│   └── [MD] 03_migration_plan.md            // 移行計画
-│
-└── [DIR] 05_project_management/ // プロジェクト管理
-    ├── [MD] 01_project_plan.md              // プロジェクト計画
-    ├── [MD] 02_quality_management.md        // 品質管理
-    └── [MD] 03_risk_management.md           // リスク管理
+└── [DIR] 04_operations/         // 運用
+    ├── [MD] 01_operations_manual.md         // 運用マニュアル
+    ├── [MD] 02_monitoring_backup.md         // 監視・バックアップ
+    └── [MD] 03_migration_plan.md            // 移行計画
 ```
