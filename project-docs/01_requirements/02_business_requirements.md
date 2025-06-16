@@ -1,4 +1,25 @@
 ---
+title: "ビジネス要件定義書"
+version: "1.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "01_project_overview.md"
+  - "03_functional_requirements.md"
+  - "04_non_functional_requirements.md"
+  - "../02_design/01_system_architecture.md"
+  - "../05_project_management/01_project_plan.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "01_project_overview.md"
+  downstream:
+    - "03_functional_requirements.md"
+    - "04_non_functional_requirements.md"
+    - "../02_design/01_system_architecture.md"
+---
+
 # ドキュメント情報
 **ドキュメント名**: ビジネス要件定義書
 **作成日**: [作成日を記載]

@@ -1,31 +1,36 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: システムアーキテクチャ設計書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../01_requirements/01_project_overview.md（プロジェクト概要）
-- ../01_requirements/02_business_requirements.md（ビジネス要件）
-- ../01_requirements/03_functional_requirements.md（機能要件）
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- ../01_requirements/05_constraints.md（制約条件）
-
-### 参照されるドキュメント
-- 02_application_design.md（アプリケーション設計）
-- 03_database_design.md（データベース設計）
-- 04_interface_design.md（インターフェース設計）
-- ../03_development/01_development_standards.md（開発標準）
-- ../04_operations/01_operations_manual.md（運用マニュアル）
-- ../04_operations/02_monitoring_backup.md（監視・バックアップ）
-
-### 関連ドキュメント
-- ../03_development/02_test_specifications.md（テスト仕様）
-- ../03_development/03_deployment_guide.md（デプロイメントガイド）
-- ../05_project_management/02_quality_management.md（品質管理）
+title: "システムアーキテクチャ設計書"
+version: "1.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "../01_requirements/01_project_overview.md"
+  - "../01_requirements/02_business_requirements.md"
+  - "../01_requirements/03_functional_requirements.md"
+  - "../01_requirements/04_non_functional_requirements.md"
+  - "../01_requirements/05_constraints.md"
+  - "02_application_design.md"
+  - "03_database_design.md"
+  - "04_interface_design.md"
+  - "../03_development/01_development_standards.md"
+  - "../04_operations/01_operations_manual.md"
+  - "../04_operations/02_monitoring_backup.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "../01_requirements/01_project_overview.md"
+    - "../01_requirements/02_business_requirements.md"
+    - "../01_requirements/03_functional_requirements.md"
+    - "../01_requirements/04_non_functional_requirements.md"
+    - "../01_requirements/05_constraints.md"
+  downstream:
+    - "02_application_design.md"
+    - "03_database_design.md"
+    - "04_interface_design.md"
+    - "../03_development/01_development_standards.md"
+    - "../04_operations/01_operations_manual.md"
+    - "../04_operations/02_monitoring_backup.md"
 ---
 
 # システムアーキテクチャ設計書

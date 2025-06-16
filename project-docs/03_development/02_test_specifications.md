@@ -1,26 +1,25 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: テスト仕様書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../01_requirements/03_functional_requirements.md（機能要件）
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- ../02_design/01_system_architecture.md（システムアーキテクチャ）
-- ../02_design/02_application_design.md（アプリケーション設計）
-- 01_development_standards.md（開発標準）
-
-### 参照されるドキュメント
-- 03_deployment_guide.md（デプロイメントガイド）
-
-### 関連ドキュメント
-- ../02_design/03_database_design.md（データベース設計）
-- ../02_design/04_interface_design.md（インターフェース設計）
-- ../05_project_management/02_quality_management.md（品質管理）
+title: "テスト仕様書"
+version: "1.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "../01_requirements/03_functional_requirements.md"
+  - "../02_design/02_application_design.md"
+  - "../02_design/04_interface_design.md"
+  - "01_development_standards.md"
+  - "03_deployment_guide.md"
+  - "../05_project_management/02_quality_management.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "../01_requirements/03_functional_requirements.md"
+    - "../02_design/02_application_design.md"
+    - "../02_design/04_interface_design.md"
+    - "01_development_standards.md"
+  downstream:
+    - "03_deployment_guide.md"
 ---
 
 # テスト仕様書

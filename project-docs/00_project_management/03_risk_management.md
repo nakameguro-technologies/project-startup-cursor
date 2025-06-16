@@ -1,27 +1,22 @@
 ---
-# ドキュメント情報
-**ドキュメント名**: リスク管理計画書
-**作成日**: [作成日を記載]
-**最終更新日**: [更新日を記載]
-**バージョン**: 1.0
-**作成者**: [作成者名]
-
-## ドキュメント依存関係
-### 前提ドキュメント
-- ../01_requirements/01_project_overview.md（プロジェクト概要）
-- ../01_requirements/05_constraints.md（制約条件）
-- 01_project_plan.md（プロジェクト計画）
-
-### 参照されるドキュメント
-- なし（リスク管理は継続的な活動）
-
-### 関連ドキュメント
-- ../01_requirements/02_business_requirements.md（ビジネス要件）
-- ../01_requirements/04_non_functional_requirements.md（非機能要件）
-- 02_quality_management.md（品質管理）
-- ../04_operations/01_operations_manual.md（運用マニュアル）
-- ../04_operations/02_monitoring_backup.md（監視・バックアップ）
-- ../04_operations/03_migration_plan.md（移行計画）
+title: "リスク管理計画書"
+version: "1.0"
+last_updated: "[更新日を記載]"
+author: "[作成者名]"
+reviewers: []
+related_docs:
+  - "01_project_plan.md"
+  - "../01_requirements/01_project_overview.md"
+  - "../01_requirements/05_constraints.md"
+  - "../04_operations/03_migration_plan.md"
+status: "draft"
+dependencies:
+  upstream:
+    - "01_project_plan.md"
+    - "../01_requirements/01_project_overview.md"
+    - "../01_requirements/05_constraints.md"
+  downstream:
+    - "../04_operations/03_migration_plan.md"
 ---
 
 # リスク管理計画書
