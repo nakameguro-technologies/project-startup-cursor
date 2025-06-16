@@ -1,6 +1,6 @@
 ---
 title: "プロジェクト概要"
-version: "1.0"
+version: "0.0"
 last_updated: "[更新日を記載]"
 author: "[作成者名]"
 reviewers: []
