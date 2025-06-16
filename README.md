@@ -6,11 +6,19 @@ Project as Codeについては[Qiita記事](https://qiita.com/kumai_yu/items/0aa
 
 ## フォルダ構成
 ```
-.cursor/rules/project-design.mdc #Rules
-input-docs/ #インプット情報置き場
-project-docs/ #ドキュメント（テンプレート）
-directory-structure.md #ディレクトリ構造定義
-project-config.yaml #プロジェクト定義
+project-startup-cursor
+├── .cursor/
+│   └── rules/
+│       └── project-design.mdc   //Rules
+├── input-docs/                  // インプット情報置き場
+├── project-docs/                // ドキュメント（テンプレート）
+│   ├── 00_project_management/   // プロジェクト管理
+│   ├── 01_requirements/         // 要件定義
+│   ├── 02_design/               // 設計
+│   ├── 03_development/          // 開発
+│   └── 04_operations/           // 運用
+├── directory-structure.md       // ディレクトリ構造定義
+└── project-config.yaml          // プロジェクト定義
 ```
 
 ## 本リポジトリ利用の流れ
