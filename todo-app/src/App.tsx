@@ -3,6 +3,7 @@ import { useTodos } from './hooks/useTodos';
 import { NewTodoForm } from './components/NewTodoForm/NewTodoForm';
 import { TodoList } from './components/TodoList/TodoList';
 import { Footer } from './components/Footer/Footer';
+import { CsvExportButton } from './components/CsvExportButton/CsvExportButton';
 import styles from './components/App/App.module.css';
 
 export const App: React.FC = () => {
@@ -39,6 +40,8 @@ export const App: React.FC = () => {
       </main>
 
       <Footer todos={todos} />
+      
+      <CsvExportButton todos={todos} />
     </div>
   );
 };
