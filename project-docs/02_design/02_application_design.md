@@ -1,7 +1,7 @@
 ---
 title: "アプリケーション設計"
-version: "1.0"
-last_updated: "2025-06-18"
+version: "1.1"
+last_updated: "2025-01-28"
 author: "takumi kumagai"
 reviewers: []
 related_docs: ["01_system_architecture.md", "03_database_design.md"]
@@ -83,6 +83,13 @@ interface FooterProps {
   totalCount: number;
   completedCount: number;
 }
+
+// CsvExportButton.tsx - CSV出力ボタン
+interface CsvExportButtonProps {
+  todos: TodoItem[];
+  onExport?: () => void;
+  disabled?: boolean;
+}
 ```
 
 #### 2.1.3 Atomic Components（基本UI部品）
@@ -154,6 +161,7 @@ export const App: React.FC = () => {
         totalCount={todos.length}
         completedCount={todos.filter(todo => todo.completed).length}
       />
+      <CsvExportButton todos={todos} />
     </div>
   );
 };
@@ -198,6 +206,63 @@ export const TodoItem: React.FC<TodoItemProps> = ({
             onEnter={handleSave}
           />
           <Button onClick={handleSave} variant="primary">
+            Save
+          </Button>
+          <Button onClick={handleCancel} variant="secondary">
+            Cancel
+          </Button>
+        </div>
+      ) : (
+        <div className="todo-content">
+          <span className="todo-title">{todo.title}</span>
+          <div className="todo-actions">
+            <Button onClick={() => setIsEditing(true)} variant="secondary">
+              Edit
+            </Button>
+            <Button onClick={() => onDelete(todo.id)} variant="danger">
+              Delete
+            </Button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+```
+
+#### 2.2.3 CsvExportButton.tsx（CSV出力ボタン）
+```typescript
+export const CsvExportButton: React.FC<CsvExportButtonProps> = ({
+  todos,
+  onExport,
+  disabled = false
+}) => {
+  const handleExport = useCallback(() => {
+    try {
+      const csvContent = convertTodosToCsv(todos);
+      const filename = generateCsvFilename();
+      downloadCsv(csvContent, filename);
+      
+      // コールバック実行（統計・ログ用）
+      onExport?.();
+    } catch (error) {
+      console.error('CSV export failed:', error);
+      throw new Error('CSV export failed');
+    }
+  }, [todos, onExport]);
+
+  return (
+    <div className="csv-export-section">
+      <Button
+        onClick={handleExport}
+        variant="primary"
+        disabled={disabled || todos.length === 0}
+      >
+        CSV出力 ({todos.length}件)
+      </Button>
+    </div>
+  );
+};
             Save
           </Button>
           <Button onClick={handleCancel} variant="secondary">
@@ -438,6 +503,54 @@ export const calculateStats = (todos: TodoItem[]) => {
   
   return { total, completed, active, completionRate };
 };
+
+export const formatDateForCsv = (date: Date): string => {
+  return date.toISOString().replace('T', ' ').substring(0, 19);
+};
+
+export const generateCsvFilename = (): string => {
+  const now = new Date();
+  const dateStr = now.toISOString().substring(0, 10); // YYYY-MM-DD
+  return `todos_${dateStr}.csv`;
+};
+
+export const convertTodosToCsv = (todos: TodoItem[]): string => {
+  const headers = ['ID', 'タイトル', '完了状態', '作成日時', '更新日時'];
+  const csvHeaders = headers.join(',');
+  
+  const csvRows = todos.map(todo => {
+    const row = [
+      `"${todo.id}"`,
+      `"${todo.title.replace(/"/g, '""')}"`, // CSVエスケープ
+      `"${todo.completed ? '完了' : '未完了'}"`,
+      `"${formatDateForCsv(todo.createdAt)}"`,
+      `"${formatDateForCsv(todo.updatedAt)}"`
+    ];
+    return row.join(',');
+  });
+  
+  return [csvHeaders, ...csvRows].join('\n');
+};
+
+export const downloadCsv = (csvContent: string, filename: string): void => {
+  const BOM = '\uFEFF'; // UTF-8 BOM for Excel compatibility
+  const blob = new Blob([BOM + csvContent], { 
+    type: 'text/csv;charset=utf-8' 
+  });
+  
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  
+  link.href = url;
+  link.download = filename;
+  link.style.display = 'none';
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  URL.revokeObjectURL(url);
+};
 ```
 
 ### 4.3 LocalStorage操作
@@ -658,4 +771,5 @@ export const renderWithProviders = (
 
 | バージョン | 更新日 | 更新者 | 更新内容 | 影響ドキュメント |
 |---|-----|-----|----|---|
-| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 03_database_design.md, 03_development/ | 
+| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 03_database_design.md, 03_development/ |
+| 1.1 | 2025-01-28 | takumi kumagai | CSV出力機能の設計追加 | 03_development/02_test_specifications.md | 
