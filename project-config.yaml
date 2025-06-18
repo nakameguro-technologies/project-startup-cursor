@@ -2,11 +2,11 @@
 # Project Configuration File
 
 project:
-  name: "プロジェクト名"
-  created_date: "2025-06-01"
+  name: "todo-app-learning"
+  created_date: "2025-06-18"
 
 user:
-  name: "ユーザー名"
+  name: "takumi kumagai"
 
 settings:
   default_language: "ja"
