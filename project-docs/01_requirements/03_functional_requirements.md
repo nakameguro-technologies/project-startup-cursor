@@ -1,7 +1,7 @@
 ---
 title: "機能要件"
-version: "1.0"
-last_updated: "2025-06-18"
+version: "1.1"
+last_updated: "2025-01-27"
 author: "takumi kumagai"
 reviewers: []
 related_docs: ["02_business_requirements.md", "04_non_functional_requirements.md"]
@@ -40,7 +40,7 @@ impact_level: "high"
 - **制約**: 
   - タイトルは必須入力
   - 空白のみの入力は不可
-  - 最大文字数: [TODO]
+  - 最大文字数: 100文字
 
 #### FR002: ToDoアイテム削除機能
 - **概要**: 既存のToDoアイテムを削除する
@@ -156,4 +156,5 @@ interface TodoList {
 
 | バージョン | 更新日 | 更新者 | 更新内容 | 影響ドキュメント |
 |---|-----|-----|----|---|
-| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 04_non_functional_requirements.md, 02_design/ | 
+| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 04_non_functional_requirements.md, 02_design/ |
+| 1.1 | 2025-01-27 | takumi kumagai | 文字数制限を100文字に設定 | - | 

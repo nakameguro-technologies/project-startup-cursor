@@ -1,7 +1,7 @@
 ---
 title: "プロジェクト概要"
-version: "1.0"
-last_updated: "2025-06-18"
+version: "1.1"
+last_updated: "2025-01-27"
 author: "takumi kumagai"
 reviewers: []
 related_docs:
@@ -37,11 +37,11 @@ TypeScript + Reactの学習・練習を目的としたToDoリストアプリケ�
 
 ### 1.3 プロジェクト期間
 - 開始日: 2025-06-18
-- 完了予定日: [TODO]
+- 完了予定日: 2025-06-19
 
 ### 1.4 プロジェクト規模
 - 種別: 学習・練習用小規模アプリケーション
-- 想定工数: [TODO]
+- 想定工数: 1-2日
 
 ## 2. プロジェクト概要
 
@@ -59,8 +59,8 @@ TypeScript + Reactの学習・練習を目的としたToDoリストアプリケ�
 - **フロントエンド**: React + TypeScript
 - **状態管理**: React Hooks (useState)
 - **データ永続化**: LocalStorage
-- **開発環境**: [TODO: 決定予定]
-- **スタイリング**: [TODO: 決定予定]
+- **開発環境**: Create React App (CRA)
+- **スタイリング**: CSS Modules
 
 ## 3. 成功基準
 
@@ -94,6 +94,7 @@ TypeScript + Reactの学習・練習を目的としたToDoリストアプリケ�
 | バージョン | 更新日 | 更新者 | 更新内容 | 影響ドキュメント |
 |---|-----|-----|----|---|
 | 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | - |
+| 1.1 | 2025-01-27 | takumi kumagai | 技術スタック決定・期間設定 | 02_design/01_system_architecture.md |
 
 ## 6. プロジェクトの目的・背景
 ### 6.1 背景

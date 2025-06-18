@@ -1,7 +1,7 @@
 ---
 title: "システムアーキテクチャ"
-version: "1.0"
-last_updated: "2025-06-18"
+version: "1.1"
+last_updated: "2025-01-27"
 author: "takumi kumagai"
 reviewers: []
 related_docs: ["02_application_design.md", "03_database_design.md"]
@@ -170,9 +170,10 @@ App
 │ 言語            │ TypeScript      │ 型安全性確保       │
 │ フレームワーク  │ React           │ UI構築             │
 │ 状態管理        │ React Hooks     │ 状態管理           │
-│ スタイリング    │ [TODO: 決定予定]│ UI装飾             │
-│ バンドラー      │ [TODO: 決定予定]│ ビルド・開発環境   │
-│ テストツール    │ [TODO: 決定予定]│ テスト実行         │
+│ スタイリング    │ CSS Modules     │ UI装飾・スコープ化 │
+│ バンドラー      │ Create React App│ ビルド・開発環境   │
+│ テストツール    │ Jest + React    │ テスト実行         │
+│                 │ Testing Library │                    │
 └─────────────────┴─────────────────┴────────────────────┘
 ```
 
@@ -292,4 +293,5 @@ const handleError = (error: Error, type: ErrorType): void => {
 
 | バージョン | 更新日 | 更新者 | 更新内容 | 影響ドキュメント |
 |---|-----|-----|----|---|
-| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 02_application_design.md, 03_database_design.md | 
+| 1.0 | 2025-06-18 | takumi kumagai | 初版作成 | 02_application_design.md, 03_database_design.md |
+| 1.1 | 2025-01-27 | takumi kumagai | 技術スタック決定（CRA、CSS Modules） | 01_requirements/01_project_overview.md | 
