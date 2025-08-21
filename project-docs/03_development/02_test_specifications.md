@@ -10,7 +10,7 @@ related_docs:
   - "../02_design/04_interface_design.md"
   - "01_development_standards.md"
   - "03_deployment_guide.md"
-  - "../05_project_management/02_quality_management.md"
+  - "../00_project_management/02_quality_management.md"
 status: "draft"
 dependencies:
   upstream:

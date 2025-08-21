@@ -7,14 +7,14 @@ reviewers: []
 related_docs:
   - "../03_development/03_deployment_guide.md"
   - "01_operations_manual.md"
-  - "../05_project_management/01_project_plan.md"
-  - "../05_project_management/03_risk_management.md"
+  - "../00_project_management/01_project_plan.md"
+  - "../00_project_management/03_risk_management.md"
 status: "draft"
 dependencies:
   upstream:
     - "../03_development/03_deployment_guide.md"
     - "01_operations_manual.md"
-    - "../05_project_management/01_project_plan.md"
+    - "../00_project_management/01_project_plan.md"
   downstream: []
 ---
 

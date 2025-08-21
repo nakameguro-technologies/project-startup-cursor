@@ -39,13 +39,13 @@ alwaysApply: true
 ```
 変更種別                          → 影響するドキュメント
 ─────────────────────────────────────────────────────────────
-ビジネス要件変更                  → 01_requirements/* → 02_design/* → 05_project_management/*
+ビジネス要件変更                  → 01_requirements/* → 02_design/* → 00_project_management/*
 機能要件変更                      → 01_requirements/03_* → 02_design/* → 03_development/02_*
 非機能要件変更                    → 01_requirements/04_* → 02_design/01_* → 04_operations/*
 システム構成変更                  → 02_design/01_* → 03_development/* → 04_operations/*
 データベース設計変更              → 02_design/03_* → 03_development/* → 04_operations/03_*
-プロジェクト計画変更              → 05_project_management/01_* → All Documents
-リスク・品質管理変更              → 05_project_management/02,03_* → 03_development/*
+プロジェクト計画変更              → 00_project_management/01_* → All Documents
+リスク・品質管理変更              → 00_project_management/02,03_* → 03_development/*
 ```
 
 ### 3. 更新手順

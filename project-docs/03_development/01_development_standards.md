@@ -12,7 +12,7 @@ related_docs:
   - "03_deployment_guide.md"
   - "../02_design/03_database_design.md"
   - "../02_design/04_interface_design.md"
-  - "../05_project_management/02_quality_management.md"
+  - "../00_project_management/02_quality_management.md"
 status: "draft"
 dependencies:
   upstream:

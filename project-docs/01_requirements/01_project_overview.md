@@ -10,9 +10,9 @@ related_docs:
   - "04_non_functional_requirements.md"
   - "05_constraints.md"
   - "../02_design/01_system_architecture.md"
-  - "../05_project_management/01_project_plan.md"
-  - "../05_project_management/02_quality_management.md"
-  - "../05_project_management/03_risk_management.md"
+  - "../00_project_management/01_project_plan.md"
+  - "../00_project_management/02_quality_management.md"
+  - "../00_project_management/03_risk_management.md"
 status: "draft"
 dependencies:
   upstream: []
@@ -22,7 +22,7 @@ dependencies:
     - "04_non_functional_requirements.md"
     - "05_constraints.md"
     - "../02_design/01_system_architecture.md"
-    - "../05_project_management/01_project_plan.md"
+    - "../00_project_management/01_project_plan.md"
 ---
 
 # プロジェクト概要

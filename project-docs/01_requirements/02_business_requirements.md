@@ -9,7 +9,7 @@ related_docs:
   - "03_functional_requirements.md"
   - "04_non_functional_requirements.md"
   - "../02_design/01_system_architecture.md"
-  - "../05_project_management/01_project_plan.md"
+  - "../00_project_management/01_project_plan.md"
 status: "draft"
 dependencies:
   upstream:
